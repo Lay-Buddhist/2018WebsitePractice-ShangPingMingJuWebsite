@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script type="text/javascript">
+    function reqs() {
+        $.ajax({
+            type: 'get',
+            url: 'demo.php',
+            dataType: 'json',
+            success: function(res) {
+                console.log(res);
+            },
+            error: function() {
+                console.log('请求失败~');
+            }
+        });
+    }
+    reqs();
+    setInterval(reqs, 3000);
+</script>

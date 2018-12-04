@@ -1,0 +1,113 @@
+.ww {
+    width: 1088px;
+    margin:  0 auto;
+}
+.main {
+    padding-top: 95px;
+}
+.main-f {
+    display: flex;
+    /*height: 900px;*/
+    flex-wrap: wrap;
+    /*background-color: red;*/
+    align-content: space-around;
+}
+.main-con {
+    margin: 0.8em 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height:288px;
+}
+.con-son {
+    position: relative;
+    float: left;
+    width: 266px;
+    height: 100%;
+    text-align: center;
+}
+.con-son::before{
+    position: absolute;
+    left:-20%;
+    top: 13%;
+    content: "";
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+}
+.main-con:nth-child(1) .con-son:nth-child(1)::before {
+    background: url("../icon/装饰.png") no-repeat;
+}
+.main-con:nth-child(1) .con-son:nth-child(2)::before {
+    background: url("../icon/保温罩.png") no-repeat;
+}
+.main-con:nth-child(1) .con-son:nth-child(3)::before {
+    background: url("../icon/建筑物.png") no-repeat;
+}
+.main-con:nth-child(2) .con-son:nth-child(1)::before {
+    background: url("../icon/路径.png") no-repeat;
+}
+.main-con:nth-child(2) .con-son:nth-child(2)::before {
+    background: url("../icon/园林.png") no-repeat;
+}
+.main-con:nth-child(2) .con-son:nth-child(3)::before {
+    background: url("../icon/水电.png") no-repeat;
+}
+.main-con:nth-child(3) .con-son:nth-child(1)::before {
+    background: url("../icon/燃气管道.png") no-repeat;
+}
+.main-con:nth-child(3) .con-son:nth-child(2)::before {
+    background: url("../icon/型钢4.png") no-repeat;
+}
+.main-con:nth-child(3) .con-son:nth-child(3)::before {
+    background: url("../icon/市政.png") no-repeat;
+}
+.main-con:nth-child(4) .con-son:nth-child(1)::before {
+    background: url("../icon/环保装修.png") no-repeat;
+}
+.main-con:nth-child(4) .con-son:nth-child(2)::before {
+    background: url("../icon/玻璃行业.png") no-repeat;
+}
+.main-con:nth-child(4) .con-son:nth-child(3)::before {
+    background: url("../icon/建筑建材.png") no-repeat;
+}
+.main-con:nth-child(5) .con-son:nth-child(1)::before {
+    background: url("../icon/40类材料加工x16.png") no-repeat;
+}
+.con-son h3 {
+    cursor:pointer;
+    position: relative;
+    font-size: 16px;
+    height: 46px;
+    line-height: 46px;
+    color: #595959;
+    -webkit-transition: all ease-out .2s;
+    transition: all ease-out .2s;
+    font-family: "Microsoft Yahei", "微软雅黑";
+    margin-top: 10%;
+    margin-bottom: 10%;
+    border-bottom: 1px solid #e1e1e1;
+    text-align: left;
+    width: 100%;
+    max-width: 100%;
+}
+.con-son h3::before{
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 1px;
+    background-color: #3c3c3c;
+    margin-top: 46px;
+    -webkit-transition: all .6s cubic-bezier(.215, .61, .355, 1) 0s;
+    transition: all .6s cubic-bezier(.215, .61, .355, 1) 0s;
+}
+.con-son h3:hover:before {
+    width: 100%;
+}
+.con-son p {
+    max-width: 100%;
+    text-align: left;
+    color: #848484;
+    line-height: 1.8em;
+    font-size: 13px;
+}

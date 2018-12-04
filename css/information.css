@@ -1,0 +1,83 @@
+.main {
+    padding-top: 95px;
+    background-color: #f0f0f0;
+}
+.main-f {
+    margin-bottom: 10px;
+}
+.main-f-top {
+    width: 100%;
+    height: 65px;
+}
+.main-btn {
+    width: 18%;
+    text-align: left;
+    text-indent: 3%;
+    height: 100%;
+    line-height: 65px;
+    font-size: 1.1em;
+    font-family: "Times New Roman", "微软雅黑";
+    background: url("../img/laba.png") no-repeat left;
+    font-weight: 600;
+}
+.main-f-bottom {
+    width: 100%;
+    height: 65px;
+    line-height: 65px;
+    font-size: 1.1em;
+    font-family: "Times New Roman", "微软雅黑";
+}
+.main-f-bottom span {
+    color: #C80D17;
+    font-size: 1.1em;
+    font-family: 'Raleway', sans-serif;
+}
+.main-f-bottom-l {
+
+}
+.main-f-bottom-r select {
+    width:36px;
+    text-align: center;
+    box-shadow: 1px 1px 10px 1px #999999;
+    color: #C80D17;
+}
+.main-f-con {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.cons {
+    margin: 25px 0;
+    height: 136px;
+    flex: 0 1 50%;
+}
+.cons a {
+    color: #000000;
+}
+.cons p {
+    color: #999999;
+}
+.cons-title {
+    width: 100%;
+    height: 50%;
+    background-color: #dfdfdf;
+    -webkit-transition: all .6s cubic-bezier(.17, .84, .44, 1) 0s;
+    transition: all .6s cubic-bezier(.17, .84, .44, 1) 0s;
+    font: 12px/22px "微软雅黑";
+}
+.cons-title:hover {
+    background-color: rgba(247,175,0,.5);
+}
+.cons-con {
+    width: 100%;
+    height: 50%;
+    background-color: #fff;
+    box-sizing: border-box;
+    padding-top: 15px;
+}
+.cons-con p {
+    color: #000000;
+}
+.cons-con a {
+    color: #C80D17;
+}

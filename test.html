@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <script src="js/jquery.min.js"></script>
+    <style type="text/css">
+        .nav-top {
+            z-index: 999;
+            position: fixed;
+            width: 100%;
+            height: 35px;
+            background-color: #ffffff;
+        }
+        .nav-top-f {
+            height: 100%;
+            background-color: #000;
+            color: #f5f5f5;
+            line-height: 35px;
+            font-size: 14px;
+        }
+        .nav-top-l {
+            margin-left: 50px;
+        }
+        .nav-top-l::before {
+            content: "";
+            position: absolute;
+            left: 15px;
+            top: -2px;
+            width: 50px;
+            height: 50px;
+            background: url("img/company.png") no-repeat;
+        }
+        .nav-top-r {
+            /*margin-right: 50px;*/
+            position: relative;
+        }
+        .ntr1,.ntr2 {
+            position: relative;
+            margin-right: 50px;
+        }
+
+        .ntr1::before {
+            content: "";
+            position: absolute;
+            left: -36px;
+            width: 32px;
+            height: 32px;
+            background: url("img/phonesmall.png") no-repeat;
+        }
+        .ntr2::before {
+            content: "";
+            width: 32px;
+            height: 32px;
+            position: absolute;
+            left: -36px;
+            background: url("img/kefusmall.png") no-repeat;
+        }
+        .nav {
+            padding-top: 35px;
+            position: fixed;
+            width: 100%;
+            height: 60px;
+            background-color: #e4eaec;
+            box-shadow: 0px 2px 50px 0px rgba(0,0,0,.4);
+        }
+        .nav-f {
+            height: 100%;
+        }
+        .nav-logo {
+            width: 200px;
+            height: 100%;
+            float: left;
+        }
+        .nav-logo-a {
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            text-indent: -999em;
+            background: url("img/logo.png") left center no-repeat;
+        }
+        #nav>ul>li {
+            position: relative;
+            float: left;
+            line-height: 60px;
+            margin-right: 15px;
+        }
+        #nav li:nth-child(1) .nav-lia:hover:after {
+            width: 69px;
+        }
+        #nav li:nth-child(2) .nav-lia:hover:after {
+            width: 96px;
+        }
+        #nav li:nth-child(6) .nav-lia:hover:after {
+            width: 96px;
+        }
+        #nav li:nth-child(7) .nav-lia:hover:after {
+            width: 96px;
+        }
+        #nav li:nth-child(3) .nav-lia {
+            padding-right: 30px;
+        }
+        #nav li:nth-child(4) .nav-lia {
+            padding-right: 30px;
+        }
+        #nav li:nth-child(5) .nav-lia {
+            padding-right: 30px;
+        }
+        .nav-lia{
+            height: 100%;
+            position: relative;
+            padding: 0 20px;
+            display: inline-block;
+            transition: all 0.4s linear;
+            color: #696969;
+            font-size: 14px;
+        }
+        .nav-span {
+            /*z-index: -1;*/
+            position: absolute;
+            left: 0;
+            width: 110px;
+            display: none;
+            text-align: center;
+            line-height: 40px;
+            box-shadow: 0px 2px 10px 2px #e4eaec;
+        }
+        .nav-span li {
+            width: 100%;
+            line-height: 40px;
+            height: 40px;
+        }
+        .nav-span a {
+            color: #464646;
+            font-size: 14px;
+            display: inline-block;
+            width: 100%;
+            background-color: #ffffff;
+            line-height: 40px;
+            height: 40px;
+            border-bottom: 1px  solid rgba(0,0,0,.4);
+        }
+        .nav-span a:hover {
+            color: #696969;
+            background-color: #e4eaec;
+        }
+        .fa::before {
+            position: absolute;
+            top: 25px;
+            right: 15px;
+            content: "\f107";
+            font-family: FontAwesome;
+            font-style: normal;
+            font-weight: 400;
+            text-rendering: auto;
+            font-size: 15px;
+        }
+        .nav-lia::after {
+            position: absolute;
+            content: "";
+            width: 0px;
+            height: 2px;
+            background-color: rgba(0,0,0,.4);
+            bottom: 0;
+            left: 0;
+            transition: all 0.5s linear;
+
+        }
+        .nav-lia:hover {
+            background-color: #ffffff;
+        }
+        .nav-lia:hover:after {
+            width: 110px;
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="nav-top">
+    <div class="nav-top-f">
+        <div class="nav-top-l fl">
+            Welcome to our official website
+        </div>
+        <div class="nav-top-r fr">
+            <span class="ntr1">151-09156237</span><span class="ntr2">029-38163868</span>
+        </div>
+    </div>
+</div>
+<div class="nav">
+    <div class="nav-f w">
+        <div class="nav-logo">
+            <a href="http://www.wxjgo.top" class="nav-logo-a">陕西尚品铭居建筑装饰工程有限公司
+            </a>
+        </div>
+        <nav id="nav" class="fr">
+            <ul>
+                <li><a class="nav-lia" href="#">首页</a></li>
+                <li>
+                    <a class="nav-lia" href="#">新闻动态
+                    </a>
+                </li>
+                <li><a class="nav-lia  nav-font" href="#">公司概况  <i class="fa fa-angle-down"></i></a>
+                 <ul class="nav-span">
+                     <li><a href="#">公司简介</a></li>
+                     <li><a href="#">精英团队</a></li>
+                 </ul>
+                </li>
+                <li><a class="nav-lia  nav-font" href="#">服务范围  <i class="fa fa-angle-down"></i></a>
+                    <ul class="nav-span">
+                        <li><a href="#">服务项目</a></li>
+                        <li><a href="#">成功案例</a></li>
+                    </ul>
+                </li>
+                <li><a class="nav-lia  nav-font" href="#">资讯中心  <i class="fa fa-angle-down"></i></a>
+                    <ul class="nav-span">
+                        <li><a href="#">新闻动态</a></li>
+                        <li><a href="#">装修资讯</a></li>
+                    </ul>
+                </li>
+                <li><a class="nav-lia" href="#">联系我们</a></li>
+                <li><a class="nav-lia" href="#">招贤纳士</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+<script>
+    $("#nav>ul>li").mouseenter(function () {
+        $(this).children(".nav-span").slideDown("0.2s");
+    }).mouseleave(function () {
+        $(this).children(".nav-span").slideUp("0.2s");
+    });
+</script>
+</body>
+</html>

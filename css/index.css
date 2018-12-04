@@ -1,0 +1,372 @@
+*, *:after, *:before {
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+/*main start*/
+.main {
+    box-sizing: content-box;
+    height: 3100px;
+    padding-top: 86px;
+    background-color: #f0f0f0;
+}
+/*server start*/
+.server {
+    width: 100%;
+    /*margin-top: 0px;*/
+    height: 500px;
+    background-color: #f0f0f0;
+}
+.server-f {
+    max-width: 1250px;
+    max-height: 500px;
+}
+.server-bottom{
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: space-around;
+    height: 350px;
+}
+.server-son{
+    position: relative;
+    transition: all 0.5s ease-out;
+    width: 300px;
+    height: 350px;
+    max-height: 350px;
+    text-align: center;
+    background-color: #f0f0f0;
+    overflow: hidden;
+    border: 1px solid #000;
+}
+.server-son img {
+    transition: all 0.3s ease-in;
+}
+.server-son img:hover{
+    -webkit-border-radius: 3.3em;
+    -moz-border-radius: 3.3em;
+    border-radius: 3.3em;;
+    box-shadow: 0 0 0 0.2em #000000;
+    outline: 0.3em solid #000000;
+}
+.server-talk {
+    color: #000;
+    text-align: center;
+    font-family: 仿宋;
+    font-weight: 600;
+    font-size: 14px;
+}
+.server-more{
+    text-align: center;
+    padding-top: 10px;
+    box-sizing: border-box;
+    position: absolute;
+    display: inline-block;
+    width: 300px;
+    height: 350px;
+    background: hsla(0,0%,100%,.6);
+    /*background: rgba(0,0,0,.3);*/
+    transition: all 0.5s ease-in-out;
+    left: 0;
+    top: 320px;
+    font-size: 14px;
+    box-shadow: 0 5px 10px 5px rgba(0,0,0,.6) ;
+}
+.server-say{
+    font-size: 12px;
+    font-family: "Microsoft Yahei", "微软雅黑";
+    margin-top: 10px;
+    color: #000000;
+    font-weight: 500;
+}
+.server-more>i {
+    color: #000;
+    display: inline-block;
+    width: 100%;
+    /*border-left:solid 1px #000;*/
+    /*border-right: solid 1px #000;*/
+}
+.server-more:hover{
+    top: 0px;
+}
+.server-more:hover i {
+    color: rgba(0,0,0,0);
+}
+.server-son:hover {
+    box-shadow: 2px 2px 10px 2px #aaa;
+}
+/*server end*/
+
+/*news start*/
+.news {
+    width: 100%;
+    height: 500px;
+    /*background-color: orange;*/
+}
+.newsf {
+    max-width: 1250px;
+    max-height: 350px;
+}
+.news-bottom {
+    box-sizing: border-box;
+    width: 100%;
+    height: 350px;
+    text-align: center;
+    padding-top: 28px;
+}
+.ggao {
+    position: relative;
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+    /*background-color: red;*/
+    border-top: 1px dotted #000;
+    border-bottom: 1px dotted #000;
+    color: #3c3c3c;
+}
+.ggao-img {
+    text-align: left;
+    text-indent: 2.8em;
+    position: absolute;
+    width: 100%;
+    height: 32px;
+    line-height: 32px;
+    font-size: 1.2em;
+    background: url("../img/laba.png") no-repeat;
+}
+.ggao-img a{
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background: url("../img/more.png") no-repeat;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.news-bottom h3 {
+    color: #3c3c3c;
+    font-size: 1.5em;
+    font-family: 楷体;
+    line-height: 5.8em;
+}
+/*news end*/
+/*we start*/
+.we {
+    height: 500px;
+}
+.wef{
+    max-width: 1250px;
+    max-height: 500px;
+}
+.we-bottom {
+    height: 350px;
+    max-height: 350px;
+    max-width: 100%;
+}
+.we-photo {
+    margin-left: 30px;
+    float: left;
+    height: 100%;
+    width: 30%;
+    /*background-color: brown;*/
+}
+.list h3 {
+    position: relative;
+    height: 35px;
+    line-height: 35px;
+    padding-left: 30px;
+    border-bottom: 2px solid rgba(0,0,0,.9);
+    font-size: 12px;
+    color: #000;
+    background: #f0f0f0;
+    transition: all 0.3s ease 0s;
+}
+.list .more-see {
+    font-size: 12px;
+    position: absolute;
+    top: 0;
+    right: 0%;
+    display: block;
+    width: 75px;
+    height: 34px;
+    color: #333333;
+    line-height: 34px;
+    text-align: center;
+    border-radius: 10px 10px 10px 6px;
+    /*box-shadow: 2px 2px 10px #000;*/
+}
+/*.list .more-see::after {*/
+    /*content: "";*/
+    /*display: block;*/
+    /*width: 0;*/
+    /*height: 0;*/
+    /*border: 2px solid;*/
+    /*border-color: transparent transparent transparent red;*/
+    /*top: 8px;*/
+    /*right: -30px;*/
+/*}*/
+.list .pictxt {
+    height: 0px;
+    background: #D9D9D9;
+    transition: all 0.3s ease 0s;
+    color: transparent;
+}
+.list:hover h3 {
+    color:#f0f0f0;
+    background-color: #000000;
+}
+.list:hover h3 a {
+    color: #f0f0f0;
+}
+.list:hover .pictxt {
+    height: 160px;
+    line-height:1.3em;
+    color: #333;
+}
+.we-fon {
+    position: relative;
+    box-sizing: border-box;
+    float: right;
+    width: 50%;
+    height:100%;
+    background-size: 100% 100%;
+    background-image: url("../img/bg-3.jpg");
+    text-align: center;
+    color: #ffffff;
+}
+.wefon-son {
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.4);
+}
+.we-fon>p{
+    height: 300px;
+}
+.we-fon h1 {
+    padding-top: 20px;
+    font-size: 24px;
+    font-weight: 500;
+    font-family: "SimSun", "宋体";
+}
+.we-fon p{
+    margin-top: 40px;
+    /*background-color: rgba(0,0,0,.4);*/
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.5em;
+    /*text-shadow: 1px 1px 2px #fff;*/
+    font-family: "SimSun", "宋体";
+}
+.we-fon p a {
+    color: #ffffff;
+    transition: all 0.5s linear;
+}
+.go-we {
+    position: absolute;
+    left:40%;
+    bottom: 0;
+}
+/*we end*/
+
+/*team start*/
+.team {
+    width: 100%;
+    height: 500px;
+}
+.team-f{
+    height: 500px;
+    max-height: 500px;
+}
+.team-bottom {
+    width: 100%;
+    background: url("../img/team-bg.jpg");
+    height: 350px;
+    display: flex;
+    justify-content: space-around;
+}
+.teamp1,.teamp2,.teamp3 {
+    width: 300px;
+    height: 100%;
+    transition: all 0.5s linear;
+}
+.teamp{
+    position: relative;
+}
+.teamp::before {
+    position: absolute;
+    color: transparent;
+    text-align: center;
+    font-family: "SimSun", "宋体";
+    font-size: 15px;
+    content: "王小军";
+    display: inline-block;
+    background-color: rgba(0,0,0,.0);
+    width: 100%;
+}
+.teamp:nth-child(2)::before {
+    content: "赵文龙";
+}
+.teamp:nth-child(3)::before {
+    content: "赵建华";
+}
+.teamp:hover {
+    box-shadow: 0px 2px 5px 2px #ccc;
+    background-origin:content-box;
+}
+.teamp:hover:before {
+    height: 40px;
+    line-height: 40px;
+    color: #ffffff;
+    background-color: rgba(0,0,0,.4);
+    box-shadow: 2px 2px 10px 2px rgba(0,0,0,.4);
+}
+.teamp1 {
+    background-size:100% 125%;
+    background-image: url("../img/p-1.jpg");
+}
+.teamp2 {
+    background-size:100% 125%;
+    background-image: url("../img/p-1.jpg");
+}
+.teamp3 {
+    background-size:100% 125%;
+    background-image: url("../img/p-1.jpg");
+}
+.talk-team {
+    position: absolute;
+    width: 100%;
+    height: 40%;
+    background-color: #f0f0f0;
+    bottom: 0;
+    text-align: center;
+    border-bottom: 1px solid #cccccc;
+}
+.talk-team p {
+    padding: 10px 20px 0;
+    height: 60%;
+    background-color: #f0f0f0;
+    line-height: 17px;
+    font-size: 12px;
+    color: #696969;
+}
+.talk-team a {
+    margin-top: 15px;
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    background-color: transparent;
+    line-height: 30px;
+    border: 1px solid #cccccc;
+    transition: all 0.5s linear;
+    cursor: pointer;
+    color: #333333;
+}
+.talk-team a:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+/*team end*/
+
+/*success start*/
+
+/*success end*/
+
+/*main end*/
